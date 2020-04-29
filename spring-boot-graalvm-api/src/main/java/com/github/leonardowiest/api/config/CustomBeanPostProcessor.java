@@ -14,7 +14,8 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 
-		log.info(String.format("Calling bean post processor before init for bean: %s - class name: ", beanName, bean.getClass()));
+		log.info(String.format("Calling bean post processor before init for bean: %s - class name: ", beanName,
+				bean.getClass()));
 
 		return bean;
 	}
