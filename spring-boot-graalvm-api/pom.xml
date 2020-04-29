@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.github.leonardowiest</groupId>
+		<artifactId>spring-boot-graalvm-prototipo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>spring-boot-graalvm-prototipo-api</artifactId>
+	<groupId>com.github.leonardowiest.api</groupId>
+	<name>Spring boot - GraalVM - Api</name>
+
+	<properties>
+		<start-class>spring-boot-graalvm-prototipo.Application</start-class>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<artifactId>spring-boot-graalvm-prototipo-repository</artifactId>
+			<groupId>com.github.leonardowiest.repository</groupId>
+			<version>${com.github.leonardowiest.version}</version>
+			<scope>provided</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<artifactId>spring-boot-graalvm-prototipo-service</artifactId>
+			<groupId>com.github.leonardowiest.service</groupId>
+			<version>${com.github.leonardowiest.version}</version>
+			<scope>provided</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<artifactId>spring-boot-graalvm-prototipo-util</artifactId>
+			<groupId>com.github.leonardowiest.util</groupId>
+			<version>${com.github.leonardowiest.version}</version>
+			<scope>provided</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			<scope>${dependency.scope}</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<scope>${dependency.scope}</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<scope>${dependency.scope}</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<scope>${dependency.scope}</scope>
+		</dependency>
+	</dependencies>
+</project>                                                                                                     
