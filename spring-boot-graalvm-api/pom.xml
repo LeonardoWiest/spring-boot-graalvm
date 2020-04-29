@@ -13,17 +13,12 @@
 	<name>Spring boot - GraalVM - Api</name>
 
 	<properties>
-		<start-class>com.github.leonardowiest.Application</start-class>
+		<start-class>com.github.leonardowiest.api.Application</start-class>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<artifactId>spring-boot-graalvm-repository</artifactId>
-			<groupId>com.github.leonardowiest.repository</groupId>
-			<version>${com.github.leonardowiest.version}</version>
-			<scope>provided</scope>
-			<optional>true</optional>
-		</dependency>
+
+		<!-- Módulos do projeto -->
 		<dependency>
 			<artifactId>spring-boot-graalvm-service</artifactId>
 			<groupId>com.github.leonardowiest.service</groupId>
@@ -31,6 +26,7 @@
 			<scope>provided</scope>
 			<optional>true</optional>
 		</dependency>
+
 		<dependency>
 			<artifactId>spring-boot-graalvm-util</artifactId>
 			<groupId>com.github.leonardowiest.util</groupId>
@@ -38,30 +34,24 @@
 			<scope>provided</scope>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-			<scope>${dependency.scope}</scope>
-		</dependency>
+
+		<!-- Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-			<scope>${dependency.scope}</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<scope>${dependency.scope}</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-configuration-processor</artifactId>
-			<scope>${dependency.scope}</scope>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -69,6 +59,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>${start-class}</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

@@ -1,4 +1,4 @@
-package com.github.leonardowiest;
+package com.github.leonardowiest.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
