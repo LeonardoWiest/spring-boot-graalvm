@@ -13,7 +13,7 @@
 	<name>Spring boot - GraalVM - Api</name>
 
 	<properties>
-		<start-class>spring-boot-graalvm.Application</start-class>
+		<start-class>com.github.leonardowiest.Application</start-class>
 	</properties>
 
 	<dependencies>
@@ -63,4 +63,13 @@
 			<scope>${dependency.scope}</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>                                                                                                     
