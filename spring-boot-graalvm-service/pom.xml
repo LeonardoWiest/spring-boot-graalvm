@@ -4,24 +4,24 @@
 
 	<parent>
 		<groupId>com.github.leonardowiest</groupId>
-		<artifactId>spring-boot-graalvm-prototipo</artifactId>
+		<artifactId>spring-boot-graalvm</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>spring-boot-graalvm-prototipo-service</artifactId>
+	<artifactId>spring-boot-graalvm-service</artifactId>
 	<groupId>com.github.leonardowiest.service</groupId>
 	<name>Spring boot - GraalVM - Service</name>
 
 	<dependencies>
 		<dependency>
-			<artifactId>spring-boot-graalvm-prototipo-repository</artifactId>
+			<artifactId>spring-boot-graalvm-repository</artifactId>
 			<groupId>com.github.leonardowiest.repository</groupId>
 			<version>${com.github.leonardowiest.version}</version>
 			<scope>provided</scope>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<artifactId>spring-boot-graalvm-prototipo-util</artifactId>
+			<artifactId>spring-boot-graalvm-util</artifactId>
 			<groupId>com.github.leonardowiest.util</groupId>
 			<version>${com.github.leonardowiest.version}</version>
 			<scope>provided</scope>

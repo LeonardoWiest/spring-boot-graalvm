@@ -4,11 +4,11 @@
 
 	<parent>
 		<groupId>com.github.leonardowiest</groupId>
-		<artifactId>spring-boot-graalvm-prototipo</artifactId>
+		<artifactId>spring-boot-graalvm</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>spring-boot-graalvm-prototipo-util</artifactId>
+	<artifactId>spring-boot-graalvm-util</artifactId>
 	<groupId>com.github.leonardowiest.util</groupId>
 	<name>Spring boot - GraalVM - Util</name>
 </project>                                                                                                     
