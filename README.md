@@ -22,17 +22,15 @@ Passos para instalação do GraalVM
 
 ### WINDOWS
 
-Faça o download da JDK 8 do GraalVM e do jar imagem-nativa:
+Faça o download da JDK 8 do GraalVM e do .jar da imagem nativa por meio do link:
 ```https://github.com/graalvm/graalvm-ce-builds/releases```
 
-Defina a sua varivavel JAVA_HOME para a instalacao da JDK do GraalVM.
-
-Após faça a instalação do jar da imagem nativa, através do comando:
+Em seguida, defina a sua varivavel JAVA_HOME para a instalacao da JDK do GraalVM.Após faça a instalação do jar da imagem nativa, através do comando:
 
 ```gu -L install native-image.jar```
 
-Faça clone do repositório `https://github.com/LeonardoWiest/spring-boot-graalvm`, após
-execute o PowerShell do Windows como Administrador e faça a instalação das Lib's necessárias para a compilação em imagem nativa através do gerenciador chocolatey, copie e cole o comando abaixo no PowerShell :
+Na sequencia, faça clone do repositório `https://github.com/LeonardoWiest/spring-boot-graalvm`, e
+execute o PowerShell do Windows como Administrador para que seja feita a instalação das Lib's necessárias para a compilação em imagem nativa, isso através do gerenciador chocolatey, copie e cole o comando abaixo no PowerShell :
 
 Instalação do chocolatey:
 ``` Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```
