@@ -8,11 +8,10 @@
 
 > Desenvolvedores: Leonardo Wiest e Murilo Fincatto
 
-
 ## Guia de Instalação
 
 - [Instalação](#Instalação)
-- [Contato](#Contato)
+- [Suporte](#Suporte)
 - [Licença](#Licença)
 
 
@@ -46,7 +45,7 @@ Compile o protótipo :
 
 ## Suporte
 
-Joia, qualquer dúvida estamos a disposição :)!
+Joia, qualquer dúvida estamos a disposição :)
 
 - Murilo <a href="muriloftto@gmail.com" target="_blank">`muriloftto@gmail.com`</a>
 - Leonardo <a href="" target="_blank">`@`</a>
