@@ -4,7 +4,7 @@
 
 # Spring-Boot-GraalVM
 
-> Repositório do prtótipo para compilação em imagem nativa em Java 8
+> Repositório do protótipo modularizado para compilação em imagem nativa na versão Java 8
 
 > Desenvolvedores: Leonardo Wiest e Murilo Fincatto
 
