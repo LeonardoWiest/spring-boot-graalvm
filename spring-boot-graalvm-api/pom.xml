@@ -13,7 +13,7 @@
 	<name>Spring boot - GraalVM - Api</name>
 
 	<properties>
-		<start-class>com.github.leonardowiest.api.Application</start-class>
+		<start-class>com.github.leonardowiest.Application</start-class>
 	</properties>
 
 	<dependencies>

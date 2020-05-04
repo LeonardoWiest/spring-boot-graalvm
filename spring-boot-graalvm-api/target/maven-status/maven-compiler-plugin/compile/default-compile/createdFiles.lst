@@ -1,2 +1,4 @@
-com\github\leonardowiest\api\Application.class
-com\github\leonardowiest\api\config\CustomBeanPostProcessor.class
+com\github\leonardowiest\api\impl\ProductControllerImpl.class
+com\github\leonardowiest\api\config\ComponentScanApiConfiguration.class
+com\github\leonardowiest\Application.class
+com\github\leonardowiest\api\ProductController.class

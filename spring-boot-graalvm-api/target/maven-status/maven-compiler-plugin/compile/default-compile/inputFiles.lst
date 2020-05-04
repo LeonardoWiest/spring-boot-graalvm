@@ -1,2 +1,4 @@
-C:\Ferramentas\github\spring-boot-graalvm\spring-boot-graalvm-api\src\main\java\com\github\leonardowiest\api\Application.java
-C:\Ferramentas\github\spring-boot-graalvm\spring-boot-graalvm-api\src\main\java\com\github\leonardowiest\api\config\CustomBeanPostProcessor.java
+C:\Ferramentas\github\spring-boot-graalvm\spring-boot-graalvm-api\src\main\java\com\github\leonardowiest\api\impl\ProductControllerImpl.java
+C:\Ferramentas\github\spring-boot-graalvm\spring-boot-graalvm-api\src\main\java\com\github\leonardowiest\Application.java
+C:\Ferramentas\github\spring-boot-graalvm\spring-boot-graalvm-api\src\main\java\com\github\leonardowiest\api\config\ComponentScanApiConfiguration.java
+C:\Ferramentas\github\spring-boot-graalvm\spring-boot-graalvm-api\src\main\java\com\github\leonardowiest\api\ProductController.java
