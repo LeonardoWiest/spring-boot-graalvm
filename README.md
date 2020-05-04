@@ -4,9 +4,9 @@
 
 # Spring-Boot-GraalVM
 
-> Repositório do prtótipo para compilação em imagem nativa em Java 8.
+> Repositório do prtótipo para compilação em imagem nativa em Java 1.8.
 
-> Desenvolvedores: Murilo Fincatto e Leonardo Wiest
+> Desenvolvedores: Leonardo Wiest e Murilo Fincatto
 
 
 ## Guia de Instalação
@@ -22,8 +22,14 @@ Passos para instalação do GraalVM
 
 ### WINDOWS
 
-Faça o download da JDK do GraalVM, versão:
-https://github.com/graalvm/graalvm-ce-builds/releases
+Faça o download da JDK 8 do GraalVM e do jar imagem-nativa:
+```https://github.com/graalvm/graalvm-ce-builds/releases```
+
+Defina a sua varivavel JAVA_HOME para a instalacao da JDK do GraalVM.
+
+Após faça a instalação do jar da imagem nativa, através do comando:
+
+```gu -L install native-image.jar```
 
 Faça clone do repositório `https://github.com/LeonardoWiest/spring-boot-graalvm`, após
 execute o PowerShell do Windows como Administrador e faça a instalação das Lib's necessárias para a compilação em imagem nativa através do gerenciador chocolatey, copie e cole o comando abaixo no PowerShell :
