@@ -56,19 +56,8 @@
 			</exclusions>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<!-- Spring Boot/Graal -->
-		<dependency>
-			<groupId>org.springframework.experimental</groupId>
-			<artifactId>spring-graal-native</artifactId>
-			<version>0.6.1.BUILD-SNAPSHOT</version>
-		</dependency>
 
-		<!-- GraalVM -->
+		<!-- Spring Boot/Graal -->
 		<dependency>
 			<groupId>org.springframework.experimental</groupId>
 			<artifactId>spring-graal-native</artifactId>
@@ -89,22 +78,6 @@
 		</plugins>
 	</build>
 
-	<repositories>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-		</repository>
-	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-		</pluginRepository>
-	</pluginRepositories>
-
 	<!-- Profile/Graal -->
 	<profiles>
 		<profile>
@@ -117,23 +90,15 @@
 						<version>20.0.0</version>
 						<configuration>
 							<buildArgs>
-
-								-Dspring.graal.mode=initialization-only -Dspring.graal.dump-config=/tmp/computed-reflect-config.json -Dspring.graal.verbose=true -Dspring.graal.skip-logback=true
-								--initialize-at-run-time=org.springframework.data.r2dbc.connectionfactory.ConnectionFactoryUtils --initialize-at-build-time=io.r2dbc.spi.IsolationLevel,io.r2dbc.spi
-								--initialize-at-build-time=io.r2dbc.spi.ConstantPool,io.r2dbc.spi.Assert,io.r2dbc.spi.ValidationDepth --initialize-at-build-time=org.springframework.data.r2dbc.connectionfactory
-								-H:+TraceClassInitialization --no-fallback --allow-incomplete-classpath --report-unsupported-elements-at-runtime -H:+ReportExceptionStackTraces --no-server
-								--initialize-at-build-time=org.reactivestreams.Publisher --initialize-at-build-time=com.example.reactive.ReservationRepository --initialize-at-run-time=io.netty.channel.unix.Socket
-								--initialize-at-run-time=io.netty.channel.unix.IovArray --initialize-at-run-time=io.netty.channel.epoll.EpollEventLoop --initialize-at-run-time=io.netty.channel.unix.Errors
 								-Dspring.graal.remove-unused-autoconfig=true
-								--no-fallback
-								--allow-incomplete-classpath
+								--no-fallback --allow-incomplete-classpath
 								--report-unsupported-elements-at-runtime
-								-H:+ReportExceptionStackTraces
-								--no-server
+								-H:+ReportExceptionStackTraces --no-server
+								--enable-all-security-services
 								--verbose
 								-Dspring.graal.skip-logback=true
 								-Ddebug=true
-								-H:Name=spring-boot-graalvm-native-image
+								-H:Name=springbootnativeimage
 								-H:IncludeResourceBundles=javax.servlet.http.LocalStrings
 								-H:IncludeResourceBundles=javax.servlet.LocalStrings
 								-H:EnableURLProtocols=http,jar
