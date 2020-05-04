@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -89,7 +88,7 @@
 			</plugin>
 		</plugins>
 	</build>
-  
+
 	<repositories>
 		<repository>
 			<id>spring-milestones</id>
@@ -105,7 +104,7 @@
 			<url>https://repo.spring.io/milestone</url>
 		</pluginRepository>
 	</pluginRepositories>
-	
+
 	<!-- Profile/Graal -->
 	<profiles>
 		<profile>
@@ -126,10 +125,10 @@
 								--initialize-at-build-time=org.reactivestreams.Publisher --initialize-at-build-time=com.example.reactive.ReservationRepository --initialize-at-run-time=io.netty.channel.unix.Socket
 								--initialize-at-run-time=io.netty.channel.unix.IovArray --initialize-at-run-time=io.netty.channel.epoll.EpollEventLoop --initialize-at-run-time=io.netty.channel.unix.Errors
 								-Dspring.graal.remove-unused-autoconfig=true
-								--no-fallback 
+								--no-fallback
 								--allow-incomplete-classpath
 								--report-unsupported-elements-at-runtime
-								-H:+ReportExceptionStackTraces 
+								-H:+ReportExceptionStackTraces
 								--no-server
 								--verbose
 								-Dspring.graal.skip-logback=true
@@ -156,4 +155,6 @@
 				</plugins>
 			</build>
 		</profile>
+	</profiles>
+	
 </project>                                                                                                     
