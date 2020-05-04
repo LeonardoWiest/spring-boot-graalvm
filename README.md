@@ -52,7 +52,7 @@ Compile o protótipo :
 Joia, qualquer dúvida estamos a disposição :)
 
 - Murilo <a href="muriloftto@gmail.com" target="_blank">`muriloftto@gmail.com`</a>
-- Leonardo <a href="" target="_blank">`@`</a>
+- Leonardo <a href="leonardowiest@hotmail.com" target="_blank">`leonardowiest@hotmail.com`</a>
 
 ## Licença
 
