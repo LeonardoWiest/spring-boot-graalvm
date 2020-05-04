@@ -11,9 +11,9 @@
 
 ## Guia de Instalação
 
-- [Instalação](#installation)
-- [Contato](#support)
-- [Licença](#license)
+- [Instalação](#Instalação)
+- [Contato](#Contato)
+- [Licença](#Licença)
 
 
 ## Instalação
@@ -21,6 +21,9 @@
 Passos para instalação do GraalVM
 
 ### WINDOWS
+
+Faça o download da JDK do GraalVM, versão:
+https://github.com/graalvm/graalvm-ce-builds/releases
 
 Faça clone do repositório `https://github.com/LeonardoWiest/spring-boot-graalvm`, após
 execute o PowerShell do Windows como Administrador e faça a instalação das Lib's necessárias para a compilação em imagem nativa através do gerenciador chocolatey, copie e cole o comando abaixo no PowerShell :
@@ -37,14 +40,14 @@ Utilize o comando Call para utilizar o SDK
 Compile o protótipo :
 ```mvn clean package -Dmaven.test.skip=true -Pgraal```
 
-## Support
+## Suporte
 
 Joia, qualquer dúvida estamos a disposição :)!
 
 - Murilo <a href="muriloftto@gmail.com" target="_blank">`muriloftto@gmail.com`</a>
 - Leonardo <a href="" target="_blank">`@`</a>
 
-## License
+## Licença
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
