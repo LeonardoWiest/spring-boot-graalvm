@@ -10,7 +10,7 @@
 
 > Desenvolvedores: Leonardo Wiest e Murilo Fincatto
 
-## Guia de Instalação
+## Menu
 
 - [Instalação](#Instalação)
 - [Suporte](#Suporte)
