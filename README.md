@@ -16,7 +16,7 @@
 - [Licença](#license)
 
 
-## Installation
+## Instalação
 
 Passos para instalação do GraalVM
 
