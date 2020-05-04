@@ -28,3 +28,4 @@ blog/bin/
 hs_err_pid*
 *.springBeans
 *.factorypath
+*/XMLNFCe*
