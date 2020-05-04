@@ -22,8 +22,8 @@ Passos para instalação do GraalVM
 
 ### WINDOWS
 
-Faça clone do repositório `https://github.com/LeonardoWiest/spring-boot-graalvm`
-Execute o PowerShell do Windows como Administrador, faça a instalação das Lib's necessárias para a compilação em imagem nativa através do gerenciador chocolatey,copie e cole o comando abaixo:
+Faça clone do repositório `https://github.com/LeonardoWiest/spring-boot-graalvm`, após
+execute o PowerShell do Windows como Administrador e faça a instalação das Lib's necessárias para a compilação em imagem nativa através do gerenciador chocolatey, copie e cole o comando abaixo no PowerShell :
 
 Instalação do chocolatey:
 ``` Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```
