@@ -19,9 +19,9 @@
 
 Passos para instalação do GraalVM
 
-### WINDOWS
+### Windows
 
-Faça o download da JDK 8 do GraalVM e do .jar da imagem nativa por meio do link:
+Faça o download da JDK 8 do GraalVM(Windows) e do .jar da imagem nativa por meio do link:
 ```https://github.com/graalvm/graalvm-ce-builds/releases```
 
 Em seguida, defina a sua varivavel JAVA_HOME para a instalacao da JDK do GraalVM.Após faça a instalação do jar da imagem nativa, através do comando:
@@ -42,6 +42,8 @@ Utilize o comando Call para utilizar o SDK
 
 Compile o protótipo :
 ```mvn clean package -Dmaven.test.skip=true -Pgraal```
+
+### Linux e Mac
 
 ## Suporte
 
