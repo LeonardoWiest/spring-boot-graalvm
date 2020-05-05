@@ -23,6 +23,8 @@ public class ProductControllerImpl implements ProductController {
 
 		List<Long> products = productService.getAll();
 
+		System.out.println("Retornou com sucesso!");
+
 		if (products.isEmpty()) {
 
 			return new ResponseEntity<>(NOT_FOUND);
